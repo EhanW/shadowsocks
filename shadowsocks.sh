@@ -332,7 +332,7 @@ install(){
     fi
 
     cd ${cur_dir}/shadowsocks-master
-    python3 setup.py install --record /usr/local/shadowsocks_install.log
+    python setup.py install --record /usr/local/shadowsocks_install.log
 
     if [ -f /usr/bin/ssserver ] || [ -f /usr/local/bin/ssserver ]; then
         chmod +x /etc/init.d/shadowsocks
